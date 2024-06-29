@@ -1,7 +1,8 @@
-function city_country(city: string, country: string): string {
-    return `${city}, ${country}`;
+function make_album(artist: string, title: string, tracks?: number) {
+    let album = { artist, title };
+    if (tracks !== undefined) {
+      album.tracks = tracks;                // error
+    }
+    return album;
   }
-  
-  console.log(city_country("Lahore", "Pakistan"));
-  console.log(city_country("Tokyo", "Japan"));
-  console.log(city_country("Paris", "France"));
+console.log(make_album("Artist", "album"));
