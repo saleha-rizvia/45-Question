@@ -1,14 +1,8 @@
-// Starts with a list of numbers
-let numbers = [1, 2, 3, 4, 5];
 
-// Doubles each number
-let doubledNumbers = numbers.map((number) => number * 2);
-
-// Shows the new list of doubled numbers
-console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
-// This line takes each number, doubles it, and puts it in a new list.
-
-
-// extra example
-let doubledNumbers1 = numbers.map((number) => number + 5);
-console.log(doubledNumbers1);
+function city_country(city: string, country: string): string {
+    return `${city}, ${country}`;
+  }
+  
+  console.log(city_country("Lahore", "Pakistan"));
+  console.log(city_country("Tokyo", "Japan"));
+  console.log(city_country("Paris", "France"));
