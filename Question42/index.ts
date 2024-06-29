@@ -1,9 +1,10 @@
-function make_album(artist: string, title: string, tracks?: number) {
-    let album = { artist, title };
-    if (tracks !== undefined) {
-      album.tracks = tracks;                // error
-    }
-    return album;
-  }
-console.log(make_album("Artist", "album"));
- 
+let magicians: string[] = ["A", "B", "C"];
+
+function show_magicians(magicians: string[]) {
+  magicians.forEach((magician) => {
+    console.log(magician);
+  });
+}
+
+show_magicians(magicians);
+
