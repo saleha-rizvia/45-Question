@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-function make_album(artist, title, tracks) {
-    let album = { artist, title };
-    if (tracks !== undefined) {
-        album.tracks = tracks; // error
-    }
-    return album;
+let magicians = ["A", "B", "C"];
+function show_magicians(magicians) {
+    magicians.forEach((magician) => {
+        console.log(magician);
+    });
 }
-console.log(make_album("Artist", "album"));
+show_magicians(magicians);
+
